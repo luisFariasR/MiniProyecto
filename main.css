@@ -1,0 +1,58 @@
+
+ .boton{
+    color: rgb(32, 21, 77);
+ }
+.inputBoton{
+    /* width: 100%;
+    max-width: 400px; */
+    width: 100%;
+    
+   
+}
+.input:hover{
+    cursor: pointer;
+}
+
+.label{
+    padding-bottom: 5px;
+    gap: 0 !important;
+    width: 50%;
+    justify-content: flex-end !important;
+}
+.lista{
+    padding-left: 0;
+}
+.noImages{
+    padding-left: 1rem;
+    padding-top: 4rem;
+   
+}
+.todo{
+    align-items: stretch;
+   
+    max-width: 1440px;
+    justify-content: space-between;
+}
+.deskImage{
+    height: 100%;
+    padding-top: 2rem;
+}
+.head{
+    font-family: 'Roboto', sans-serif;
+   
+    font-size: 4rem;
+}
+.listItem{
+    padding: 8px;
+}
+body p{
+    font-size: 16px;
+
+}
+.modal_content{
+    align-items: center;
+    justify-content: center;
+   
+  
+
+}
