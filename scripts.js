@@ -18,7 +18,7 @@ function showOf() {
   if (validateEmail(emailValue)) {
     modal.classList.remove(`d-none`);
     const  mail = `
-    <p class="text-light">
+    <p class="textModal">
       A confirmation email has been sent to <br>
       ${emailValue} Please open it and click <br> the button inside to
       confirm your subscription.</p>`
@@ -27,6 +27,7 @@ function showOf() {
   } else {
 
     alert.classList.remove(`d-none`);
+    input.classList.add(`border-danger`);
   }
   
   input.value = ""
@@ -34,6 +35,8 @@ function showOf() {
 function closeModal(){
     modal.classList.add(`d-none`);
     alert.classList.add(`d-none`);
+    input.classList.remove(`border-danger`);
+    
 }
 
 buttonDiss.addEventListener(`click`, closeModal);

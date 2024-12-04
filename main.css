@@ -1,18 +1,26 @@
-
+#all{
+   
+    align-items: center;
+    justify-content: center;
+ }
  .boton{
     color: rgb(32, 21, 77);
  }
 .inputBoton{
     /* width: 100%;
     max-width: 400px; */
-    width: 100%;
+    width: 90%;
+    justify-content: space-between !important;
     
    
 }
 .input:hover{
     cursor: pointer;
+   
 }
-
+.textModal{
+    color: rgb(28, 26, 49) !important;
+}
 .label{
     padding-bottom: 5px;
     gap: 0 !important;
@@ -24,14 +32,18 @@
 }
 .noImages{
     padding-left: 1rem;
-    padding-top: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+
    
 }
 .todo{
-    align-items: stretch;
+ 
    
-    max-width: 1440px;
+   /*  max-width: 1440px; */
     justify-content: space-between;
+    
+
 }
 .deskImage{
     height: 100%;
@@ -49,10 +61,22 @@ body p{
     font-size: 16px;
 
 }
-.modal_content{
+.modal-content{
     align-items: center;
     justify-content: center;
    
-  
+}
+.centrada{
+   
+    border-radius: 2rem;
+    background-color: beige;
+    width: 30rem;
+    
+    
 
 }
+
+.btn_dismiss{
+    width: 20rem;
+}
+

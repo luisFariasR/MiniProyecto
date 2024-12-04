@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto
-    ">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -26,97 +28,109 @@
     </title>
   </head>
   <body>
-    <div
+    <!--  <div
       class="todo container-fluid d-flex flex-column flex-md-row col-md-12 vh-100"
-    >
-      
-        <img
-          class="imageMobile d-md-none"
-          src="./assets/images/illustration-sign-up-mobile.svg"
-          alt="imgaen de registro"
-        />
-      
-
-      <div class="noImages d-flex flex-column col-md-6 offset-md-2 ">
-        <div><h1 class="head ">Stay updated!</h1></div>
-
-        <div class="text p-2">
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        </div>
-        <div class="divUl">
-          <ul class="lista d-flex flex-start flex-column">
-            <div class="listItem d-flex align-items-center mb-2">
-              <img
-                class="me-2"
-                src="./assets/images/icon-list.svg"
-                alt="icono checked"
-              />
-              <li class="list-unstyled">
-                Product discovery and building what matters
-              </li>
-            </div>
-
-            <div class="listItem d-flex align-items-center mb-2">
-              <img
-                class="me-2"
-                src="./assets/images/icon-list.svg"
-                alt="icono checked"
-              />
-              <li class="list-unstyled">
-                Measuring to ensure updates are a success
-              </li>
-            </div>
-            <div class="listItem d-flex align-items-center mb-2">
-              <img
-                class="me-2"
-                src="./assets/images/icon-list.svg"
-                alt="icono checked"
-              />
-              <li class="list-unstyled">And much more!</li>
-            </div>
-          </ul>
-        </div>
-        
-
+    > -->
+    <div class="row " id="all">
+      <div class="c">
         <div
-          class="inputBoton d-flex flex-column justify-content-between col-md-4 gap-4"
+          class="todo align-items-center justify-content-center container-fluid flex-column-reverse d-flex flex-column flex-md-row vh-sm-100"
         >
-        <label class="label " for="email" >Email address <label for="text" class="alert d-none w-50 text-danger p-0 m-0">-Valid Email required</label></label>
-       
-        <input
-            class="input rounded-3 py-2"
-            type="email"
-            placeholder="    email@company.com"
-          />
+         
+          <div
+            class="noImages d-flex flex-column col-md-6 h-100  bg-light gap-2"
+          >
+            <div><h1 class="head">Stay updated!</h1></div>
 
-          <button class="btn-subs bg-dark text-light py-2 rounded-3">
-            Subscribe to monthly newsletter
+            <div class="text p-2">
+              <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            </div>
+            <div class="divUl">
+              <ul class="lista d-flex flex-start flex-column">
+                <div class="listItem d-flex align-items-center mb-2">
+                  <img
+                    class="me-2"
+                    src="./assets/images/icon-list.svg"
+                    alt="icono checked"
+                  />
+                  <li class="list-unstyled">
+                    Product discovery and building what matters
+                  </li>
+                </div>
+
+                <div class="listItem d-flex align-items-center mb-2">
+                  <img
+                    class="me-2"
+                    src="./assets/images/icon-list.svg"
+                    alt="icono checked"
+                  />
+                  <li class="list-unstyled">
+                    Measuring to ensure updates are a success
+                  </li>
+                </div>
+                <div class="listItem d-flex align-items-center mb-2">
+                  <img
+                    class="me-2"
+                    src="./assets/images/icon-list.svg"
+                    alt="icono checked"
+                  />
+                  <li class="list-unstyled">And much more!</li>
+                </div>
+              </ul>
+            </div>
+
+            <div
+              class="inputBoton d-flex flex-column justify-content-between gap-4 "
+            >
+              <div class="labels d-flex justify-content-between">
+                <label class="label " for="email">Email address </label>
+                <label for="text" class="alert d-none w-80 text-danger p-0 m-0"
+                  >Valid Email required</label
+                >
+              </div>
+
+              <input
+                class="input rounded-3 py-2"
+                type="email"
+                placeholder="    email@company.com"
+              />
+
+              <button class="btn-subs bg-dark text-light py-2 rounded-3">
+                Subscribe to monthly newsletter
+              </button>
+            </div>
+          </div>
+          <img
+            class="imageMobile d-md-none bg-light w-100"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="imgaen de registro"
+          />
+          <div class="deskImage d-none d-md-block h-100">
+            <img
+              class="img w-100 h-100"
+              src="./assets/images/illustration-sign-up-desktop.svg"
+              alt="computers"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal-content bg-dark bg-opacity-95 w-100 vh-100 position-fixed top-0 start-0 d-flex justify-content-center align-items-center d-none"
+      >
+        <div class="centrada card-content justify-content-center align-items-center p-4">
+          <img src="./assets/images/icon-success.svg" alt="icono de palomita" />
+          <h1 class="text">Thanks for subscribing!</h1>
+          <p class="textModal">
+            A confirmation email has been sent to <br />
+            ash@loremcompany.com. Please open it and click <br />
+            the button inside to confirm your subscription.
+          </p>
+          <button class="btn_dismiss text-light bg-dark rounded-3">
+            Dismiss message
           </button>
         </div>
       </div>
-      <div class="deskImage d-none d-lg-block h-100">
-        <img
-          class="img w-100"
-          src="./assets/images/illustration-sign-up-desktop.svg"
-          alt="computers"
-        />
-      </div>
-   
     </div>
-    
-    <div class="modal-content bg-dark bg-opacity-95 w-100 vh-100 position-fixed top-0 start-0 d-flex justify-content-center align-items-center d-none">
-      <div class="centrada justify-content-center align-items-center">
-        <img src="./assets/images/icon-success.svg" alt="icono de palomita">
-     <h1 class="text-light"> Thanks for subscribing!</h1><p class="textModal text-light">
-      A confirmation email has been sent to <br>
-      ash@loremcompany.com. Please open it and click <br> the button inside to
-      confirm your subscription.</p>
-      <button class="btn_dismiss text-light bg-dark w-100 rounded-3"> Dismiss message </button>
-    </div>
-    </div>
-  
- 
-
-
   </body>
 </html>
